@@ -1,12 +1,14 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 body {
-  background-color: seagreen;
-  color: White;
-  font-family: "Comic sans", cursive;
+  animation: flashColors 99s infinite;
+  color: white;
+  font-family: "Comic Sans MS", "Comic sans";
+  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
 }
+
   .Universal-box {
     width: 100vw;
     height: 10%;
@@ -17,26 +19,155 @@ body {
     z-index: 1000;
     display: inline-block;
   }
-a:link {
-  color: pink;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 5vw 50px; 
+    box-sizing: border-box;
+    position: absolute;
+  }
+  
+  .box {
+    background-color: seagreen;
+  }
+  
+  .left-box,
+  .right-box {
+    background-color: seagreen;
+    width: 25%;
+    border: 20px solid #333;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+.school-math-box {
+  background-color: seagreen;
+  border: 10px solid #333;
+  height: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(20vh); 
+  left: calc(49vw);
+  width: 50vw; 
+  }
+  .school-english-box {
+  background-color: seagreen;
+  border: 10px solid #333;
+  height: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(40vh); 
+  left: calc(49vw);
+  width: 50vw; 
+  }
+
+.notes-box {
+  background-color: seagreen;
+  border: 10px solid #333;
+  height: 500px;
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(20vh); 
+  left: 50%;
+  width: 50vw; 
+}
+.blog-box {
+  background-color: seagreen;
+  border: 10px solid #333;
+  position: absolute;
+  top: calc(20vh);
+  left: 50vh;
+  width: 50vw; 
+  display: inline-block;
+
+}
+.Main-box {
+    background-color: seagreen;
+    width: 40%;
+    border: 20px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+
+  
+  }
+  a:link {
+  color: yellow;
   background-color: transparent;
   text-decoration: none;
-}
+  }
+  
+  a:visited {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
+@keyframes flashColors {
+  0%  { background-color: seagreen; }
+  2%  { background-color: orange; }
+  4%  { background-color: yellow; }
+  6%  { background-color: green; }
+  8%  { background-color: blue; }
+  10% { background-color: purple; }
+  12% { background-color: orange; }
+  14% { background-color: yellow; }
+  16% { background-color: green; }
+  18% { background-color: blue; }
+  20% { background-color: purple; }
+  22% { background-color: orange; }
+  24% { background-color: yellow; }
+  26% { background-color: green; }
+  28% { background-color: blue; }
+  30% { background-color: purple; }
+  32% { background-color: orange; }
+  34% { background-color: yellow; }
+  36% { background-color: green; }
+  38% { background-color: blue; }
+  40% { background-color: purple; }
+  42% { background-color: orange; }
+  44% { background-color: yellow; }
+  46% { background-color: green; }
+  48% { background-color: blue; }
+  50% { background-color: purple; }
+  52% { background-color: orange; }
+  54% { background-color: yellow; }
+  56% { background-color: green; }
+  58% { background-color: blue; }
+  60% { background-color: purple; }
+  62% { background-color: orange; }
+  64% { background-color: yellow; }
+  66% { background-color: green; }
+  68% { background-color: blue; }
+  70% { background-color: purple; }
+  72% { background-color: orange; }
+  74% { background-color: yellow; }
+  76% { background-color: green; }
+  78% { background-color: blue; }
+  80% { background-color: purple; }
+  82% { background-color: orange; }
+  84% { background-color: yellow; }
+  86% { background-color: green; }
+  88% { background-color: blue; }
+  90% { background-color: purple; }
+  92% { background-color: orange; }
+  94% { background-color: yellow; }
+  96% { background-color: green; }
+  98% { background-color: blue; }
+  100%{ background-color: purple; }
 
-a:hover {
-  color: pink;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: pink;
-  background-color: transparent;
-  text-decoration: underline;
 }
