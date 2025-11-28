@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="/style_safe.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+  </head>
+  <body>
+
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+
+<div>
+        <li>All lines after the first line of each entry in your reference list should be indented one-half inch from the left margin. This is called hanging indentation.</li>
+        <li>All authors' names should be inverted (i.e., last names should be provided first).</li>
+        <li>Authors' first and middle names should be written as initials.
+        <ul>
+        <li>For example, the reference entry for a source written by Jane Marie Smith would begin with "Smith, J. M."</li>
+        <li>If a middle name isn't available, just initialize the author's first name: "Smith, J."</li>
+        </ul>
+        </li>
+        <li>Give the last name and first/middle initials for all authors of a particular work up to and including 20 authors (<span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">this is a new rule, as APA 6 only required the first six authors</span></span>). Separate each author’s initials from the next author in the list with a comma. Use an ampersand (&amp;) before the last author’s name. If there are 21 or more authors, use an ellipsis (but no ampersand) after the 19th author, and then add the final author’s name.</li>
+        <li>Reference list entries should be alphabetized by the last name of the first author of each work.</li>
+        <li>For multiple articles by the same author, or authors listed in the same order, list the entries in chronological order, from earliest to most recent.</li>
+        <li>When referring to the titles of<span>&nbsp;</span><strong>books, chapters, articles, reports, webpages,&nbsp;</strong>or other sources, capitalize only the first letter of the first word of the title and subtitle, the first word after a colon or a dash in the title, and proper nouns.
+        <ul>
+        <li>Note again that the titles of academic journals are subject to special rules. See section below.</li>
+        </ul>
+        </li>
+        <li>Italicize titles of longer works (e.g., books, edited collections, names of newspapers, and so on).</li>
+        <li>Do not italicize, underline, or put quotes around the titles of shorter works such as chapters in books or essays in edited collections.</li>
+        
+    </div>
+      <div class = "center-box" style="color: #000000;">
+<p><span>The following rules for handling works by a single author or multiple authors apply to all APA-style references in your reference list, regardless of the type of work (book, article, electronic resource, etc.).</span></p>
+<p><strong>Note:&nbsp;</strong>Because the information on this page pertains to virtually all citations, we've highlighted a few important differences between APA 6 and APA 7 <span style="text-decoration: underline; color: #ff0000;">with underlined notes written in red.</span></p>
+<h4><strong>Single Author</strong></h4>
+<p><span>Last name first, followed by author initials.</span></p>
+<div class="example">
+<p class="citation"><span>Ahmed, S. (2012).&nbsp;</span><i>On being included: Racism and diversity in institutional life</i><span>. Duke University Press.</span></p>
+</div>
+<h4><strong>Two Authors</strong></h4>
+<p><span>List by their last names and initials. Separate author names with a comma. Use the ampersand instead of "and."</span></p>
+<div class="example">
+<p class="citation"><span>Soto, C. J., &amp; John, O. P. (2017). The next big five inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power. <em>Journal of Personality and Social Psychology</em>, <em>113</em>(1), 117-143. <a href="http://dx.doi.org/10.1037/pspp0000096">http://dx.doi.org/10.1037/pspp0000096</a></span></p>
+</div>
+<h4><strong>Three to Twenty Authors</strong></h4>
+<p><span>List by last names and initials; commas separate author names, while the last author name is preceded again by ampersand.&nbsp;</span><span style="text-decoration: underline; color: #ff0000;"><span>This is a departure from APA 6, which only required listing the first six authors before an ellipsis and the final author's name.</span></span></p>
+<div class="example">
+<p class="citation"><span>Nguyen, T., Carnevale, J. J., Scholer, A. A., Miele, D. B., &amp; Fujita, K. (2019). Metamotivational knowledge of the role of high-level and low-level construal in goal-relevant task performance. <em>Journal of Personality and Social Psychology, 117</em>(5), 879-899. <a href="http://dx.doi.org/10.1037/pspa0000166">http://dx.doi.org/10.1037/pspa0000166</a></span></p>
+</div>
+<h4><strong>More Than Twenty Authors</strong></h4>
+<p><span>List by last names and initials; commas separate author names. After the first 19 authors’ names, use an ellipsis in place of the remaining author names. Then, end with the final author's name (do not place an ampersand before it). There should be no more than twenty names in the citation in total.</span></p>
+<div class="example">
+<p class="citation"><span>Pegion, K., Kirtman, B. P., Becker, E., Collins, D. C., LaJoie, E., Burgman, R., Bell, R., DelSole, R., Min, D., Zhu, Y., Li, W., Sinsky, E., Guan, H., Gottschalck, J., Metzger, E. J., Barton, N. P., Achuthavarier, D., Marshak, J., Koster, R., . . . &nbsp;Kim, H. (2019). The subseasonal experiment (SubX): A multimodel subseasonal prediction experiment. <em>Bulletin of the American Meteorological Society</em>, <em>100</em>(10), 2043-2061. <a href="https://doi.org/10.1175/BAMS-D-18-0270.1">https://doi.org/10.1175/BAMS-D-18-0270.1</a></span></p>
+</div>
+<h4><strong>Group Author</strong></h4>
+<p><span>Group authors can include corporations, government agencies, organizations, etc; and a group may publish in coordination with individuals. Here, you simply treat the publishing organization the same way you'd treat the author's name and format the rest of the citation as normal. Be sure to give the full name of the group author in your reference list, although abbreviations may be used in your text. </span></p>
+<p><span>Entries in reference works (</span><span>&nbsp;e.g. dictionaries, thesauruses, and encyclopedias) without credited authors are also considered works with group authors.</span></p>
+<div class="example">
+<p class="citation"><span>Merriam-Webster. (2008). Braggadocio. In <em>Merriam-Webster’s Advanced Learner’s English Dictionary</em>. Merriam-Webster.</span></p>
+</div>
+<p><span>When a work has multiple layers of group authorship (e.g. The Office of the Historian, which is a part of the Department of State, publishes something), list the most specific agency as the author and the parent agency as the publisher. </span></p>
+<div class="example">
+<p class="citation">Bureau of International Organization Affairs. (2018). <em>U.S. contributions to international organizations, 2017 </em>[Annual report]. U.S. Department of State. <a href="https://www.state.gov/u-s-contributions-to-international-organizations/">https://www.state.gov/u-s-contributions-to-international-organizations/</a></p>
+</div>
+<h4><strong>Unknown Author</strong></h4>
+<p><span>When the work does not have an author move the title of the work to the beginning of the references and follow with the date of publication. Only use “Anonymous&nbsp;” if the author is the work is signed “Anonymous.” <span style="text-decoration: underline; color: #ff0000;"><span>This is a new addition to APA 7.</span></span></span></p>
+<div class="example">
+<p class="citation"><em><span>Merriam-Webster's collegiate dictionary</span></em><span> (11th ed.). (2003). Merriam-Webster.</span></p>
+</div>
+<p><strong><span>NOTE</span></strong><span>: When your essay includes parenthetical citations of sources with no author named, use a shortened version of the source's title instead of an author's name. Use quotation marks and italics as appropriate. For example, parenthetical citations of the source above would appear as follows: (<em>Merriam-Webster's</em>, 2003).</span></p>
+<h4><strong>Two or More Works by the Same Author</strong></h4>
+<p><span>Use the author's name for all entries and list the entries by the year (earliest comes first). List references with no dates before references with dates. </span></p>
+<div class="example">
+<p class="citation"><span>Urcuioli, P. J. (n.d.).</span></p>
+</div>
+<div class="example">
+<p class="citation"><span>Urcuioli, P. J. (2011).&nbsp; </span></p>
+</div>
+<div class="example">
+<p class="citation"><span>Urcuioli, P. J.&nbsp; (2015). </span></p>
+</div>
+<p><span>When an author appears both as a sole author and, in another citation, as the first author of a group, list the one-author entries first.</span></p>
+<div class="example">
+<p class="citation"><span>Agnew, C. R. (Ed.). (2014). <em>Social influences on romantic relationships: Beyond the dyad</em>. Cambridge University Press.</span></p>
+</div>
+<div class="example">
+<p class="citation"><span>Agnew, C. R., &amp; South, S. C. (Eds.). (2014). <em>Interpersonal relationships and health: Social and clinical psychological mechanisms.</em> Oxford University Press.</span></p>
+</div>
+<p><span>References that have the same first author and different second and/or third authors are arranged alphabetically by the last name of the second author, or the last name of the third if the first and second authors are the same.</span></p>
+<div class="example">
+<p class="citation"><span>Arriaga, X. B., Capezza, N. M., Reed, J. T., Wesselman, E. D., &amp; Williams, K. D. (2014). With partners like you, who needs strangers?: Ostracism involving a romantic partner. <em>Personal Relationships,</em> 21(4)<em>,</em> 557-569.</span></p>
+</div>
+<div class="example">
+<p class="citation"><span>Arriaga, X. B., Kumashiro, M., Finkel, E. J., VanderDrift, L. E., &amp; Luchies, L. B. (2014). Filling the void: Bolstering attachment security in committed relationships. <em>Social Psychological and Personality Science, 5</em>(4), 398-405.</span></p>
+</div>
+<h4><strong>Two or More Works by the Same Author in the Same Year</strong></h4>
+<p><span>If you are using more than one reference by the same author—or the same group of authors listed in the same order—published in the same year, first check to see if they have more specific dates <span style="text-decoration: underline; color: #ff0000;"><span style="text-decoration: underline;">(</span><span style="text-decoration: underline;">this recommendation is new to APA 7)</span></span>. Works with only a year should be listed before those with a more specific date. List specific dates chronologically.&nbsp; If two works have the same publication date, organize them in the reference list alphabetically by the title of the article or chapter. If references with the same date are identified as parts of a series (e.g. Part 1 and Part 2), list them in order of their place in the series. Then assign letter suffixes to the year. Refer to these sources in your essay as they appear in your reference list, e.g.: "Berndt (2004a) makes similar claims..."</span></p>
+<div class="example">
+<p class="citation"><span>Berndt, T. J. (2004a).&nbsp; Children’s friendships: Shifts over a half-century in perspectives on their development and their effects.&nbsp; <em>Merrill Palmer Quarterly, 50</em>(3)<em>, </em>206-223.</span></p>
+</div>
+<div class="example">
+<p class="citation"><span>Berndt, T. J. (2004b).&nbsp; Friendship and three A’s (aggression, adjustment, and attachment).&nbsp; <em>Journal of Experimental Child Psychology, 88</em>(1)<em>,</em> 1-4.</span></p>
+</div>
+<h4><strong>Introductions, Prefaces, Forewords, and Afterwords</strong></h4>
+<p><span>Cite the publishing information about a book as usual, but cite Introduction, Preface, Foreword, or Afterword (whatever title is applicable) as the chapter of the book.</span></p>
+<div class="example">
+<p class="citation"><span>Lang, J. M. (2018). Introduction. In Dujardin, G., Lang, J. M., &amp; Staunton, J. A. (Eds.), <em>Teaching the literature survey course </em>(pp. 1-8). West Virginia University Press.</span></p>
+</div>
+</div>
+</ul>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<!-- 
+ /---------------------\
+ |                     |
+ |  HI!!               |
+ |      DON'T          |
+ |         LOOK AT THIS|
+ | IT'S NOT            |
+ |         DONE        |
+ |                     |
+ |                     |
+ |_____________________| --> 
+  <html lang="en">
+    <head> 
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Home page</title> 
+      <script src="cookies.js"> </script> 
+      <link href="/style.css" rel="stylesheet" type="text/css" media="all"> 
+      <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+      </head> <body> 
+      <div id="nav"></div>
+      <script>
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          });
+      </script>
+      <div class = "container">
+ 
+      <div class = "left-box"> 
+      <p> If you'd like to see other stuff done by me I am the developer of Amicusia <br>
+      <a target="_blank" rel="noopener noreferrer" href = "https://www.youtube.com/@A_Solemn_Player" ><img src="/res/logoyt.png"  width="100" height="100" > </a> 
+      <a target="_blank" rel="noopener noreferrer" href = "https://www.instagram.com/amicusia/" ><img src="/res/instalogo.png" width="100" height="100" > </a><br> 
+      <a target="_blank" rel="noopener noreferrer" href = "https://github.com/christiffervogts" ><img src="/res/github.png" width="100" height="100" > </a> 
+      <a target="_blank" rel="noopener noreferrer" href = "https://www.instagram.com/smaps_sirhc/" ><img src="/res/insta.jpg" width="100" height="100" > </a> 
+      <p> ^^ Please feel free to reach out to me here!^^ </p> 
+      </div> 
+      
+            <div class="Main-box"> 
+      <h1> HELLO! </h1>
+      <p> This is a page where I plan to put both the academic things that I create as well as the games I make!
+      <br><br> Who am I? <br> To start my name is Chris (He/Him), I am a Freshman in college and I am studying mechanical engineering. I don't have huge amounts of time so I am unsure how often this will be updated but even if you don't see me update here in a while please check out the links (pictures) to the left. I speak, some, german and know how to use Java, and I'm currently learning C. My most recent project is one calculator to rule them all. I am also the creator of amicusia, Although it looks like it is abandoned I am just going through and fully reworking how collision works and that is turning out to be a larger project than I anticipated, so new stuff has slowed. I also do ceramics. You can see it in the my art tab once I've added it!
+      <br><br> To your right you'll see a button asking about cookies. <br><br> Yes! I have a plan where I wil use cookies for good. I am currently on the free plan of neocities so I cannot show ads either way but when I upgrade to  the paid plan I will only show ads if you agree to the cookies. This way, should you want to support me in a free way, then for one day you can see ads on my site then 24hr later they will disappear. <b> You have 100% control over whether or not you see ads. Nothing will be blocked if you choose not to see ads.</b> What is Planed? <br> Currently I want to add three sections. School, Games, and Misc. School will be mostly two things: lessons, and tools. Under games will be (with the exception of my larger fully fleshed out games) all my games that I make, I want to make chess, wordle, and some "gambling" games like blackjack, poker. The last thing I want to do is add a miscellaneous section where I put anything I think would be funny or wouldn't fit with the other two sections. So while I may show some tips on how to wheel throw any ceramics that I actually make will be under misc, pics. Another example is a wall of ads. I think it would be funny if at some point the only ads on the site were all in one page and by clicking it I would gain a bunch of money, you'd have no way of miss clicking onto an ad and it would feel kinda weird to <b> just </b> see ads and nothing else. Lastly dev notes for Amicusia will be under their own section of misc so you can see what I have done every once in a while.
+      <br><br><br> Please give me time to learn HTML, js, css!
+      <br><br><br> You can bookmark this for later if you'd like! <p> 
+
+
+      </div>
+      
+      <div class = "right-box"> 
+      <p id="cookieStatus"> test? </p> 
+      <button onclick="activateCookie()">Activate Cookie</button> 
+      <script>
+        function activateCookie() {
+          setCookie("userStatus", "active", 1);
+          checkCookieAndUpdate();
+        }
+        window.onload = checkCookieAndUpdate;
+      </script>
+      <br><br> 
+      <a target="_blank" rel="noopener noreferrer" href = "https://totally-academic-resource.atabook.org"> guest book! </a>
+      </div>
+      </div>
+      </body> 
+      </html>

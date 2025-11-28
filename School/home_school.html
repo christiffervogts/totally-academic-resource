@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+          <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+<div> 
+    <div class = "school-math-box" style="display: flex; align-items: center; gap: 10px;">
+     <a href = "https://totally-academic-resource.neocities.org/School/Algebra"> Algebra </a>
+      <span>  |  </span>
+    <a href = "https://totally-academic-resource.neocities.org/School/Java"> Java </a>
+    </div>
+    <div class = "school-english-box" style="display: flex; align-items: center; gap: 10px;">
+     <a href = "https://totally-academic-resource.neocities.org/School/English-apa"> APA citation rules </a>
+    </div>
+
+    <div class = "Main-box">  
+    <br><br>
+        <br><br>
+        <br><br>
+     
+
+      <p><br> Welcome! <br><br>    <br><br>This is the school section of my page. This is split into three sections: Math, Science, and language. Within Math I will begin making math lessons from pre-algabra to calculuse II and above (once I learn it). Within Science I will have lessons in Physics, Chemistry, Biology, anatomy, Java, HTML, and C. The last section language will cover both english and german grammer as well as parts of retoric and communications. I'll do my best to order it in a way that is clear and hierarchical however some things happen to over lap in ways that will break the hierarchy. I will include my scources for each lesson at the bottom of each page so please be sure to look at them, exspecialy if they are a free online source. These lessons will be more like a quick rundown While the topics I cover should be 1-2 semesters of work a deticated reader will be able to read the whole page in just a few hours. If you see something that is wrong or have a section you'd like to add please contact me and I will either fix it or help you get the lesson up. That's all for now, Happy learing.</p>   <br><br>   <br><br>
+    </div>
+
+  </div>
+  </body>
+</html>

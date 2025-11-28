@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>Miscellaneous</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+
+  </head>
+  <body>
+    <div class = "Main-box">
+      <p>
+        <br><br><br>Hello! <br><br><br>This is mainly just going to be a blog/personal note borad for me. I'll put dev notes for Amicusia and just personal project notes too. So come by every once in a while and see what's new. I plan to order everything by date so the newest poast will always be on top.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+      </div>
+    <div class = "notes-box" content="width=device-width, initial-scale=1.0">
+      <a href = "https://totally-academic-resource.neocities.org/Misc/Dev_notes"> Amicusia Notes</a> 
+      <span> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+      <a href = "https://totally-academic-resource.neocities.org/Misc/Personal_projects">Other Notes</a>
+      <span> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+      <a href = "https://totally-academic-resource.neocities.org/Misc/Personal_projects_de">Sonstige Noteiren</a>
+
+    </div>
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+
+  </body>
+</html>

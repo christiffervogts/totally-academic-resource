@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Java" content="Java, For loop speed, Java for loops, for loops, Christiffer Vogts">
+    <title>Java Papers</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+          <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+  </head>
+  <body>
+
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+      <div class = "blog-box">
+          <h1>About this page to begin</h1>
+        <ul>
+        <li>This page will <B>NOT</B> teach you about java</li>
+        <li>This page is for educational perposes only. when I publish a paper here please read it carefully as this is a one man show so there may be mistakes or logical errors in the paper.</li>
+    </ul>
+  </body>
+</html>

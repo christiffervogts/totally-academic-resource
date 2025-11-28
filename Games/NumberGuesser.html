@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+
+  </head>
+  <body>
+       <div class="blog-box">
+      <br><br><br><br>
+      Number guesser! Input a number and I will guess the number you put in!<br>
+      
+      <label for="number">Input a number</label>
+      <input type="text" id="number" name="number"><br><br>
+    
+      <input type="button" value="Guess" onclick="guessNumber()">
+    </div>
+    
+    <div id="my_modal" style="display:none; position:fixed; top:50%; left:50%; transform: translate(-50%, -50%);
+         background:#2E8B57; padding:20px; border:10px solid #333333; z-index:1000;">
+      <div id="modalContent"></div>
+      <br>
+    </div>
+        <div id="my_modal_with_buttons" style="display:none; position:fixed; top:50%; left:50%; transform: translate(-50%, -50%);
+         background:#2E8B57; padding:20px; border:10px solid #333333; z-index:1000;">
+      <div id="modalContent1"></div>
+      <br>
+      <button onclick="
+        document.getElementById('my_modal_with_buttons').style.display='none';
+        document.getElementById('my_modal').style.display='none';
+      ">Yes</button>
+      
+      <button onclick="
+        document.getElementById('my_modal_with_buttons').style.display='none';
+        document.getElementById('my_modal').style.display='none';
+      ">I love you</button>
+      
+      <button onclick="
+        document.getElementById('my_modal_with_buttons').style.display='none';
+        document.getElementById('my_modal').style.display='none';
+      ">Close</button>
+    </div>
+
+     <script>
+       let last = false;
+      function showModal(content) {
+        document.getElementById('modalContent').innerHTML = content;
+        document.getElementById('modalContent1').innerHTML = content;
+
+        if(!last){
+        document.getElementById('my_modal').style.display = 'block';
+        }
+        else{
+        document.getElementById('my_modal_with_buttons').style.display = 'block';
+        }
+      }
+      
+      function guessNumber() {
+        let val = document.getElementById('number').value;
+      
+        if (val == 6) {
+          last = true;
+          showModal("Was it 7?");
+        } else if (val == 67) {
+          last = true;
+          showModal("676767676767676767676767676 OMG YOU JUST SAID THE FUNNY NUMBER OMG!!!!!!!! 676767676767676767676767676!!!!!!!!!!!<br><br>" +
+                    "<img src='https://via.placeholder.com/150' alt='Funny image'>");
+        } else {
+          showModal("Asking ChatGPT");
+      
+          setTimeout(() => showModal("Asking ChatGPT."), 500);
+          setTimeout(() => showModal("Asking ChatGPT.."), 1000);
+          setTimeout(() => showModal("Asking ChatGPT..."), 1500);
+          setTimeout(() => {
+            last = true;
+            showModal("was it: " + Math.round(Math.sqrt((val * Math.random())^2)));
+          }, 2000);
+        }
+      
+        document.getElementById('number').value = '';
+      }
+      </script>
+    
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+      
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+  </body>
+</html>

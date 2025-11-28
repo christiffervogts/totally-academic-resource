@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>My Page</title>
+          <link href="/style_safe.css" rel="stylesheet" type="text/css" media="all">
+        </head>
+        <body>
+    <div id="nav"></div>
+    <div class="center-box" style="/style_safe.css">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav").innerHTML = data;
+          })
+          .catch(err => console.error("Nav load failed:", err));
+      });
+    </script>
+
+      <div class="WordSection1">
+
+      </div>
+        </body>
+      </html>
